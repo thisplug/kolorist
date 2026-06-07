@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
+  --color-cream: #faf7f4;
+  --color-rose: #c9a89a;
+  --color-rose-light: #e8d5cc;
+  --color-gold: #b8956c;
+  --color-gold-light: #d4b896;
+  --color-charcoal: #1a1614;
+  --color-warm-gray: #6b5e58;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-body antialiased;
+    margin: 0;
+  }
+
+  ::selection {
+    @apply bg-rose/30 text-charcoal;
+  }
+}
