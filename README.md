@@ -11,6 +11,18 @@ npm run dev
 
 Сайт откроется на `http://localhost:5173`
 
+Для доступа с телефона в той же Wi‑Fi сети:
+
+```bash
+npm run dev -- --host
+```
+
+## Публичный сайт
+
+После push в GitHub сайт автоматически публикуется на GitHub Pages:
+
+**https://thisplug.github.io/kolorist/**
+
 ## Сборка
 
 ```bash
