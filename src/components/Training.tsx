@@ -95,9 +95,6 @@ export default function Training() {
               <h3 className="font-display text-3xl text-cream lg:text-4xl">
                 Приходи на обучение
               </h3>
-              <p className="mt-4 font-display text-2xl text-cream">
-                Устала от «ничего не понятно»?
-              </p>
               <p className="mt-4 text-rose-light/80">
                 Напишите мне — расскажу подробнее, как начать обучение и что вас ждёт
                 на каждом этапе.

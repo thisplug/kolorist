@@ -43,14 +43,14 @@ export default function Pricing() {
             <FadeContent key={tariff.id} delay={i * 100}>
               <SpotlightCard
                 className={`flex h-full flex-col p-6 ${
-                  tariff.highlight ? 'ring-2 ring-gold/50' : ''
+                  tariff.highlight || tariff.id === 'self' ? 'ring-2 ring-gold/50' : ''
                 }`}
               >
                 {tariff.image && (
                   <img
                     src={tariff.image}
                     alt={`Тариф «${tariff.name}»`}
-                    className="-mx-6 -mt-6 mb-6 aspect-square w-[calc(100%+3rem)] object-cover"
+                    className="mx-auto mb-6 block aspect-square w-full rounded-xl object-contain"
                   />
                 )}
                 {tariff.highlight && (
