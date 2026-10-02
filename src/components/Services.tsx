@@ -3,7 +3,9 @@ import SpotlightCard from './SpotlightCard';
 
 const services = [
   {
-    icon: '🎨',
+    image: 'service-coloring-800.jpg',
+    imageSrcSet: 'service-coloring-400.jpg',
+    imageAlt: 'Алёна подбирает оттенок окрашивания вместе с клиенткой',
     title: 'Окрашивание волос',
     description:
       'Сложное окрашивание, тонирование и работа с блондом с бережным отношением к качеству волос.',
@@ -42,7 +44,21 @@ export default function Services() {
           {services.map((service, i) => (
             <FadeContent key={service.title} delay={i * 150}>
               <SpotlightCard className="h-full p-8">
-                <span className="text-4xl">{service.icon}</span>
+                {service.image ? (
+                  <img
+                    src={`${import.meta.env.BASE_URL}${service.image}`}
+                    srcSet={`${import.meta.env.BASE_URL}${service.imageSrcSet} 400w, ${import.meta.env.BASE_URL}${service.image} 800w`}
+                    sizes="(min-width: 1280px) 341px, (min-width: 1024px) calc((100vw - 272px) / 3), (min-width: 768px) calc((100vw - 256px) / 3), (min-width: 640px) calc(100vw - 114px), calc(100vw - 98px)"
+                    width={800}
+                    height={1200}
+                    loading="lazy"
+                    decoding="async"
+                    alt={service.imageAlt}
+                    className="block h-auto w-full rounded-xl"
+                  />
+                ) : (
+                  <span className="text-4xl">{service.icon}</span>
+                )}
                 <h3 className="mt-4 font-display text-2xl text-charcoal">{service.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-warm-gray">
                   {service.description}
