@@ -15,8 +15,8 @@ const benefits = [
     text: 'За 2–3 месяца вы получаете систему, которую я выстраивала 20 лет. Мои ученицы начинают работать, а не просто смотреть уроки.',
   },
   {
-    title: 'Доступ сразу',
-    text: 'Не нужно ждать — доступ к материалам открывается сразу после оплаты. Обучайтесь в своём темпе.',
+    title: 'Пошаговый доступ',
+    text: 'Материалы открываются последовательно: следующий этап становится доступен после сдачи домашнего задания. Так знания закрепляются, а сложные темы не превращаются в хаос.',
   },
 ];
 
@@ -55,6 +55,30 @@ export default function Training() {
         </div>
 
         <FadeContent delay={400}>
+          <div className="mt-16 grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-gold/30 bg-gold/10 p-8">
+              <p className="text-sm uppercase tracking-[0.2em] text-gold">Поддержка</p>
+              <h3 className="mt-3 font-display text-2xl text-charcoal">Я рядом на всём пути</h3>
+              <p className="mt-3 text-sm leading-relaxed text-warm-gray">
+                Во время обучения я всегда на связи: отвечаю на вопросы, разбираю
+                домашние задания и помогаю увидеть следующий шаг. После обучения
+                поддержка не заканчивается — вы можете обратиться ко мне за советом
+                в рабочих ситуациях.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-rose-light/40 bg-white/60 p-8">
+              <p className="text-sm uppercase tracking-[0.2em] text-gold">Моя цель</p>
+              <h3 className="mt-3 font-display text-2xl text-charcoal">Чтобы ваше имя было на слуху</h3>
+              <p className="mt-3 text-sm leading-relaxed text-warm-gray">
+                Я хочу, чтобы имя каждой моей ученицы звучало в этой сфере, а её
+                результатами гордились клиенты. Поэтому мы работаем не только с
+                техникой, но и с уверенностью, образом мастера и развитием практики.
+              </p>
+            </div>
+          </div>
+        </FadeContent>
+
+        <FadeContent delay={500}>
           <div className="mt-16 rounded-3xl bg-charcoal p-10 text-center md:p-16">
             <p className="font-display text-2xl text-cream md:text-3xl">
               «Устала от «ничего не понятно»?»
@@ -62,6 +86,10 @@ export default function Training() {
             <p className="mx-auto mt-4 max-w-xl text-rose-light/80">
               Напишите мне — расскажу подробнее, как начать обучение и что вас ждёт
               на каждом этапе.
+            </p>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-cream/90">
+              Вы научитесь уверенно работать, собирать запись, формировать достойный
+              прайс и расти в доходе вместе с уровнем своих клиентов.
             </p>
             <a
               href="#pricing"
