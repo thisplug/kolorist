@@ -6,6 +6,7 @@ const services = [
     image: 'service-coloring-800.jpg',
     imageSrcSet: 'service-coloring-400.jpg',
     imageAlt: 'Алёна подбирает оттенок окрашивания вместе с клиенткой',
+    icon: undefined,
     title: 'Окрашивание волос',
     description:
       'Сложное окрашивание, тонирование и работа с блондом с бережным отношением к качеству волос.',
@@ -15,13 +16,17 @@ const services = [
     image: 'service-training-800.jpg',
     imageSrcSet: 'service-training-400.jpg',
     imageAlt: 'Алёна вручает ученице сертификат об обучении колористике',
+    icon: undefined,
     title: 'Обучение колористике',
     description:
       'Я обучаю системно и с нуля: даю чёткую логику — что смотреть сначала, как думать и не путаться в колористике.',
     features: ['Онлайн и офлайн', 'Доступ сразу после оплаты', '2–3 месяца до результата'],
   },
   {
-    icon: '✨',
+    image: 'service-consultations-800.jpg',
+    imageSrcSet: 'service-consultations-400.jpg',
+    imageAlt: 'Алёна разбирает колористику и формулы за рабочим столом',
+    icon: undefined,
     title: 'Консультации',
     description:
       'Разбор сложных случаев, помощь в выборе формулы, поддержка на пути к профессионализму в колористике.',
