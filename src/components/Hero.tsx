@@ -25,8 +25,8 @@ export default function Hero() {
         />
 
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-warm-gray">
-          Топ-колорист с 19-летним опытом. Помогаю освоить правила колористики —
-          от первых шагов до уверенной работы с клиентами.
+          Топ-колорист и преподаватель с 20-летним опытом. Помогаю освоить правила
+          колористики — от первых шагов до уверенной работы с клиентами.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -46,9 +46,6 @@ export default function Hero() {
           </a>
         </div>
 
-        <p className="mt-12 text-sm text-warm-gray/80">
-          Бонусом после окрашивания — уход профессиональной косметикой TEFIA
-        </p>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ export default function Pricing() {
           <div className="mb-16 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Тарифы</p>
             <BlurText
-              text="Курс «Колористика с 0»"
+              text="Курс «Колористика с нуля»"
               delay={60}
               animateBy="words"
               className="font-display text-3xl text-charcoal md:text-5xl"

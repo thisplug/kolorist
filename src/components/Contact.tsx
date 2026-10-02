@@ -13,27 +13,7 @@ export default function Contact() {
           </div>
         </FadeContent>
 
-        <div className="grid gap-8 md:grid-cols-3">
-          <FadeContent delay={0}>
-            <div className="rounded-2xl border border-rose-light/30 bg-cream/50 p-8 text-center">
-              <span className="text-3xl">📍</span>
-              <h3 className="mt-4 font-display text-xl text-charcoal">Адрес</h3>
-              <p className="mt-3 text-sm leading-relaxed text-warm-gray">
-                ул. Александра Шмакова, 27
-                <br />
-                Челябинск
-              </p>
-              <a
-                href="https://yandex.ru/maps/?text=ул.+Александра+Шмакова+27+Челябинск"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block text-sm text-gold underline-offset-4 hover:underline"
-              >
-                Открыть на карте
-              </a>
-            </div>
-          </FadeContent>
-
+        <div className="grid gap-8 md:grid-cols-2">
           <FadeContent delay={150}>
             <div className="rounded-2xl border border-rose-light/30 bg-cream/50 p-8 text-center">
               <span className="text-3xl">🕐</span>
