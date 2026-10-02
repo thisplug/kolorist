@@ -24,15 +24,10 @@ export default function Hero() {
           className="font-display text-5xl leading-tight text-charcoal md:text-7xl"
         />
 
-        <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-gold/30 bg-white/55 px-6 py-5 shadow-sm backdrop-blur-sm md:px-10 md:py-6">
-          <p className="font-display text-2xl leading-tight text-charcoal md:text-3xl">
-            Топ-колорист и преподаватель с 20-летним опытом
-          </p>
-          <p className="mt-3 text-base leading-relaxed text-warm-gray md:text-lg">
-            Помогаю освоить правила колористики — от первых шагов до уверенной
-            работы с клиентами.
-          </p>
-        </div>
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-charcoal">
+          Топ-колорист и преподаватель с 20-летним опытом. Помогаю освоить правила
+          колористики — от первых шагов до уверенной работы с клиентами.
+        </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
