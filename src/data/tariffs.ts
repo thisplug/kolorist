@@ -2,6 +2,7 @@ export const courseTariffs = [
   {
     id: 'self',
     name: 'Я САМ',
+    image: '/kolorist/tariff-self.png',
     price: 55_000,
     highlight: false,
     description: 'Самостоятельное прохождение курса в своём темпе',
@@ -28,6 +29,7 @@ export const courseTariffs = [
   {
     id: 'standard',
     name: 'СТАНДАРТ',
+    image: '/kolorist/tariff-standard.png',
     price: 65_000,
     highlight: true,
     description: 'Курс с обратной связью и чатом с Алёной',
@@ -45,6 +47,7 @@ export const courseTariffs = [
   {
     id: 'vip',
     name: 'ВИП',
+    image: undefined,
     price: 80_000,
     highlight: false,
     description: 'Полный курс + продвижение в соцсетях',
@@ -60,6 +63,7 @@ export const courseTariffs = [
   {
     id: 'vip-practice',
     name: 'ВИП С ОТРАБОТКОЙ',
+    image: undefined,
     price: 130_000,
     highlight: false,
     description: 'Максимальный тариф с практикой на моделях',

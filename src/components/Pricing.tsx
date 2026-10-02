@@ -35,6 +35,13 @@ export default function Pricing() {
                   tariff.highlight ? 'ring-2 ring-gold/50' : ''
                 }`}
               >
+                {tariff.image && (
+                  <img
+                    src={tariff.image}
+                    alt={`Тариф «${tariff.name}»`}
+                    className="-mx-6 -mt-6 mb-6 aspect-square w-[calc(100%+3rem)] object-cover"
+                  />
+                )}
                 {tariff.highlight && (
                   <span className="mb-3 inline-block w-fit rounded-full bg-gold/15 px-3 py-1 text-xs uppercase tracking-wider text-gold">
                     Популярный
