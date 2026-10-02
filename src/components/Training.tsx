@@ -23,7 +23,7 @@ const benefits = [
 export default function Training() {
   return (
     <section id="training" className="py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeContent blur>
           <div className="mb-16 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Обучение</p>

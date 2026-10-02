@@ -10,7 +10,7 @@ function formatPrice(price: number) {
 export default function Pricing() {
   return (
     <section id="pricing" className="bg-white/50 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <FadeContent blur>
           <div className="mb-16 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Тарифы</p>
@@ -27,7 +27,7 @@ export default function Pricing() {
           </div>
         </FadeContent>
 
-        <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
+        <div className="grid items-stretch gap-6 md:grid-cols-2 2xl:grid-cols-4">
           {courseTariffs.map((tariff, i) => (
             <FadeContent key={tariff.id} delay={i * 100}>
               <SpotlightCard

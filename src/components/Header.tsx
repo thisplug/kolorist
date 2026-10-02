@@ -26,7 +26,7 @@ export default function Header() {
           : 'bg-transparent py-5'
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#" className="font-display text-2xl tracking-wide text-charcoal">
           Алёна <span className="text-gold">Михайлова</span>
         </a>
