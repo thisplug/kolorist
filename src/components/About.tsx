@@ -61,7 +61,20 @@ export default function About() {
           </div>
         </FadeContent>
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-2">
+        <div className="mt-16 grid items-start gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-x-12">
+          <FadeContent className="w-full lg:row-span-2">
+            <img
+              src={`${import.meta.env.BASE_URL}alena-about-960.jpg`}
+              srcSet={`${import.meta.env.BASE_URL}alena-about-480.jpg 480w, ${import.meta.env.BASE_URL}alena-about-960.jpg 960w`}
+              sizes="(min-width: 1280px) 467px, (min-width: 1024px) 40vw, (min-width: 480px) 448px, calc(100vw - 32px)"
+              width={960}
+              height={1440}
+              loading="lazy"
+              decoding="async"
+              alt="Алёна Михайлова — преподаватель колористики"
+              className="mx-auto block h-auto w-full max-w-md rounded-3xl lg:max-w-none"
+            />
+          </FadeContent>
           <FadeContent delay={150}>
             <div className="space-y-5 text-warm-gray leading-relaxed">
               <p>
