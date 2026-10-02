@@ -79,24 +79,41 @@ export default function Training() {
         </FadeContent>
 
         <FadeContent delay={500}>
-          <div className="mt-16 rounded-3xl bg-charcoal p-10 text-center md:p-16">
-            <p className="font-display text-2xl text-cream md:text-3xl">
-              «Устала от «ничего не понятно»?»
-            </p>
-            <p className="mx-auto mt-4 max-w-xl text-rose-light/80">
-              Напишите мне — расскажу подробнее, как начать обучение и что вас ждёт
-              на каждом этапе.
-            </p>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-cream/90">
-              Вы научитесь уверенно работать, собирать запись, формировать достойный
-              прайс и расти в доходе вместе с уровнем своих клиентов.
-            </p>
-            <a
-              href="#pricing"
-              className="mt-8 inline-block rounded-full bg-gold px-10 py-3.5 text-sm uppercase tracking-widest text-charcoal transition-all hover:bg-gold-light hover:shadow-lg"
-            >
-              Смотреть тарифы
-            </a>
+          <div className="mt-16 grid items-center gap-8 overflow-hidden rounded-3xl bg-charcoal p-6 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:p-8 lg:gap-12 lg:p-12">
+            <img
+              src={`${import.meta.env.BASE_URL}training-invitation-800.jpg`}
+              srcSet={`${import.meta.env.BASE_URL}training-invitation-400.jpg 400w, ${import.meta.env.BASE_URL}training-invitation-800.jpg 800w`}
+              sizes="(min-width: 1024px) 384px, (min-width: 768px) 36vw, (min-width: 464px) 384px, calc(100vw - 80px)"
+              width={800}
+              height={1200}
+              loading="lazy"
+              decoding="async"
+              alt="Алёна Михайлова приглашает на курс: на перчатке написано «Приходи на обучение»"
+              className="mx-auto block h-auto w-full max-w-sm rounded-2xl"
+            />
+            <div className="min-w-0 text-center md:text-left">
+              <h3 className="font-display text-3xl text-cream lg:text-4xl">
+                Приходи на обучение
+              </h3>
+              <p className="mt-4 font-display text-2xl text-cream">
+                Устала от «ничего не понятно»?
+              </p>
+              <p className="mt-4 text-rose-light/80">
+                Напишите мне — расскажу подробнее, как начать обучение и что вас ждёт
+                на каждом этапе.
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-cream/90">
+                Вы научитесь уверенно работать, собирать запись, формировать достойный
+                прайс и расти в доходе вместе с уровнем своих клиентов.
+              </p>
+              <p className="mt-5 font-medium text-cream">На все тарифы действует рассрочка.</p>
+              <a
+                href="#pricing"
+                className="mt-8 inline-block rounded-full bg-gold px-6 py-3.5 text-sm uppercase tracking-widest text-charcoal transition-all hover:bg-gold-light hover:shadow-lg sm:px-10"
+              >
+                Смотреть тарифы
+              </a>
+            </div>
           </div>
         </FadeContent>
       </div>

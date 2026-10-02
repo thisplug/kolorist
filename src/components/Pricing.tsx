@@ -24,6 +24,17 @@ export default function Pricing() {
               Выберите формат обучения — от самостоятельного прохождения до VIP с
               отработкой на моделях. Доступ открывается сразу после оплаты.
             </p>
+            <p className="mt-6 font-medium text-charcoal">
+              На все тарифы действует рассрочка.
+            </p>
+            <a
+              href="https://vk.com/mikhailova__hair"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-sm text-charcoal underline underline-offset-4 hover:text-gold"
+            >
+              Напишите мне, чтобы узнать условия рассрочки
+            </a>
           </div>
         </FadeContent>
 
@@ -51,6 +62,7 @@ export default function Pricing() {
                 <p className="mt-2 font-display text-3xl text-gold">
                   {formatPrice(tariff.price)} ₽
                 </p>
+                <p className="mt-2 text-sm font-medium text-charcoal">Доступна рассрочка</p>
                 <p className="mt-3 text-sm text-warm-gray">{tariff.description}</p>
 
                 <ul className="mt-6 flex-1 space-y-2">
