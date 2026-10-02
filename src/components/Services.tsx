@@ -41,9 +41,6 @@ export default function Services() {
         <FadeContent>
           <div className="mb-16 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Мои услуги</p>
-            <h2 className="font-display text-4xl text-charcoal md:text-5xl">
-              Чем я могу помочь
-            </h2>
           </div>
         </FadeContent>
 
