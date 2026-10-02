@@ -42,13 +42,15 @@ export default function Pricing() {
           {courseTariffs.map((tariff, i) => (
             <FadeContent key={tariff.id} delay={i * 100}>
               <SpotlightCard
-                className={`flex h-full flex-col p-6 ${
-                  tariff.highlight || tariff.id === 'self' ? 'ring-2 ring-gold/50' : ''
+                className={`flex h-full flex-col p-6 ring-1 ring-gold/50 ${
+                  tariff.highlight ? 'ring-2 ring-gold/60' : ''
                 }`}
               >
                 {tariff.image && (
                   <img
                     src={tariff.image}
+                    srcSet={tariff.imageSrcSet}
+                    sizes="(min-width: 1536px) 340px, (min-width: 768px) 45vw, calc(100vw - 80px)"
                     alt={`Тариф «${tariff.name}»`}
                     className="mx-auto mb-6 block aspect-square w-full rounded-xl object-contain"
                   />
