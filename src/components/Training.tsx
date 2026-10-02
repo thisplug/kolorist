@@ -67,6 +67,17 @@ export default function Training() {
               </p>
             </div>
             <div className="rounded-2xl border border-rose-light/40 bg-white/60 p-8">
+              <img
+                src={`${import.meta.env.BASE_URL}training-goal-800.jpg`}
+                srcSet={`${import.meta.env.BASE_URL}training-goal-400.jpg 400w, ${import.meta.env.BASE_URL}training-goal-800.jpg 800w`}
+                sizes="(min-width: 768px) 50vw, calc(100vw - 64px)"
+                width={800}
+                height={1067}
+                loading="lazy"
+                decoding="async"
+                alt="Алёна работает с палитрами оттенков волос"
+                className="mb-6 block h-64 w-full rounded-xl object-cover object-center"
+              />
               <p className="text-sm uppercase tracking-[0.2em] text-gold">Моя цель</p>
               <h3 className="mt-3 font-display text-2xl text-charcoal">Чтобы ваше имя было на слуху</h3>
               <p className="mt-3 text-sm leading-relaxed text-warm-gray">

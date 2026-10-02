@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 const navLinks = [
   { href: '#about', label: 'Обо мне' },
   { href: '#services', label: 'Услуги' },
-  { href: '#reviews', label: 'Отзывы' },
   { href: '#training', label: 'Обучение' },
+  { href: '#reviews', label: 'Отзывы' },
   { href: '#pricing', label: 'Тарифы' },
   { href: '#contact', label: 'Контакты' },
 ];

@@ -28,9 +28,7 @@ export default function Pricing() {
               На все тарифы действует рассрочка.
             </p>
             <a
-              href="https://vk.com/mikhailova__hair"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="mt-2 inline-block text-sm text-charcoal underline underline-offset-4 hover:text-gold"
             >
               Напишите мне, чтобы узнать условия рассрочки
