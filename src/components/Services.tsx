@@ -40,7 +40,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeContent>
           <div className="mb-16 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Услуги</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Мои услуги</p>
             <h2 className="font-display text-4xl text-charcoal md:text-5xl">
               Чем я могу помочь
             </h2>
