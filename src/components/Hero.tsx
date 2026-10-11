@@ -1,5 +1,6 @@
 import BlurText from './BlurText';
 import Aurora from './Aurora';
+import HeroVideo from './HeroVideo';
 
 export default function Hero() {
   return (
@@ -10,8 +11,10 @@ export default function Hero() {
         blend={0.6}
         speed={0.6}
       />
+      <div className="pointer-events-none absolute inset-0 bg-cream/60" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 py-32 text-center">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 px-6 pb-16 pt-32 lg:grid-cols-[1.3fr_0.7fr] lg:gap-16 lg:px-8 lg:py-32">
+        <div className="text-center lg:text-left">
         <p className="mb-4 text-sm uppercase tracking-[0.3em] text-gold">
           Колорист · Челябинск
         </p>
@@ -24,12 +27,12 @@ export default function Hero() {
           className="font-display text-5xl leading-tight text-charcoal md:text-7xl"
         />
 
-        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-charcoal">
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-charcoal lg:mx-0">
           Топ-колорист и преподаватель с 20-летним опытом. Помогаю освоить правила
           колористики — от первых шагов до уверенной работы с клиентами.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
           <a
             href="https://vk.com/mikhailova__hair"
             target="_blank"
@@ -45,7 +48,8 @@ export default function Hero() {
             Узнать об обучении
           </a>
         </div>
-
+        </div>
+        <HeroVideo />
       </div>
     </section>
   );
