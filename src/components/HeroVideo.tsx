@@ -50,8 +50,7 @@ export default function HeroVideo() {
   };
 
   return (
-    <figure className="mx-auto w-full max-w-[270px] lg:max-w-[324px]">
-      <div className="relative overflow-hidden rounded-3xl bg-charcoal shadow-xl ring-1 ring-gold/20">
+    <div className="absolute inset-0">
         <video
           ref={videoRef}
           src={`${import.meta.env.BASE_URL}hero-student-work.mp4`}
@@ -63,25 +62,22 @@ export default function HeroVideo() {
           playsInline
           preload="metadata"
           aria-label="Работа ученицы: процесс окрашивания и готовый результат. Видео без звука."
-          className="block aspect-[9/16] w-full object-contain"
+          className="absolute inset-0 h-full w-full object-cover object-center"
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
           onError={() => setFailed(true)}
         />
+        <div className="pointer-events-none absolute inset-0 bg-charcoal/55" aria-hidden="true" />
         {!failed && (
           <button
             type="button"
             onClick={togglePlayback}
             aria-label={playing ? 'Приостановить видео' : 'Воспроизвести видео'}
-            className="absolute bottom-4 right-4 rounded-full bg-charcoal/85 px-4 py-2.5 text-xs text-cream transition-colors hover:bg-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="absolute bottom-6 right-6 z-20 rounded-full bg-charcoal/85 px-4 py-2.5 text-xs text-cream transition-colors hover:bg-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             {playing ? 'Ⅱ Пауза' : '▶ Смотреть'}
           </button>
         )}
-      </div>
-      <figcaption className="mt-4 text-center text-xs uppercase tracking-[0.2em] text-warm-gray">
-        Работа ученицы · от процесса к результату
-      </figcaption>
-    </figure>
+    </div>
   );
 }
