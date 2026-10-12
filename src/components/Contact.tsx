@@ -16,7 +16,7 @@ export default function Contact() {
               <span className="text-3xl">💬</span>
               <h3 className="mt-4 font-display text-xl text-charcoal">Связаться</h3>
               <p className="mt-3 text-sm leading-relaxed text-warm-gray">
-                Напишите мне в удобной соцсети — отвечу на вопросы об обучении.
+                Напишите мне во ВКонтакте — отвечу на вопросы об обучении.
               </p>
               <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
               <a
@@ -26,14 +26,6 @@ export default function Contact() {
                 className="inline-block rounded-full bg-charcoal px-6 py-3 text-sm text-cream transition-colors hover:bg-gold"
               >
                 ВКонтакте
-              </a>
-              <a
-                href="https://www.instagram.com/mikhailova__hair?stkn=MWE0cDZyNHp5amFj&utm_source=qr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-full border border-charcoal/20 px-6 py-3 text-sm text-charcoal transition-colors hover:border-gold hover:text-black"
-              >
-                Instagram
               </a>
               </div>
             </div>

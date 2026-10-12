@@ -2,7 +2,7 @@ export const courseTariffs = [
   {
     id: 'self',
     name: 'Я САМ',
-    image: '/kolorist/tariff-self.png',
+    image: `${import.meta.env.BASE_URL}tariff-self.png`,
     imageSrcSet: undefined,
     price: 55_000,
     highlight: false,
@@ -30,7 +30,7 @@ export const courseTariffs = [
   {
     id: 'standard',
     name: 'СТАНДАРТ',
-    image: '/kolorist/tariff-standard.png',
+    image: `${import.meta.env.BASE_URL}tariff-standard.png`,
     imageSrcSet: undefined,
     price: 65_000,
     highlight: true,
@@ -49,8 +49,8 @@ export const courseTariffs = [
   {
     id: 'vip',
     name: 'ВИП',
-    image: '/kolorist/tariff-vip-800.jpg',
-    imageSrcSet: '/kolorist/tariff-vip-400.jpg 400w, /kolorist/tariff-vip-800.jpg 800w',
+    image: `${import.meta.env.BASE_URL}tariff-vip-800.jpg`,
+    imageSrcSet: `${import.meta.env.BASE_URL}tariff-vip-400.jpg 400w, ${import.meta.env.BASE_URL}tariff-vip-800.jpg 800w`,
     price: 80_000,
     highlight: false,
     description: 'Полная программа обучения, продвижение и поддержка Алёны на всём пути.',
@@ -78,9 +78,9 @@ export const courseTariffs = [
   {
     id: 'vip-practice',
     name: 'ВИП С ОТРАБОТКОЙ',
-    image: '/kolorist/tariff-vip-practice-800.jpg',
+    image: `${import.meta.env.BASE_URL}tariff-vip-practice-800.jpg`,
     imageSrcSet:
-      '/kolorist/tariff-vip-practice-400.jpg 400w, /kolorist/tariff-vip-practice-800.jpg 800w',
+      `${import.meta.env.BASE_URL}tariff-vip-practice-400.jpg 400w, ${import.meta.env.BASE_URL}tariff-vip-practice-800.jpg 800w`,
     price: 130_000,
     highlight: false,
     description: 'Полная программа курса с практикой на моделях под руководством Алёны.',
