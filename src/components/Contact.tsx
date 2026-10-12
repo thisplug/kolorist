@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeContent>
           <div className="mb-8 text-center">
-            <h2 className="text-sm uppercase tracking-[0.3em] text-gold">Контакты</h2>
+            <h2 className="text-sm uppercase tracking-[0.3em] text-black">Контакты</h2>
           </div>
         </FadeContent>
 
@@ -31,7 +31,7 @@ export default function Contact() {
                 href="https://www.instagram.com/mikhailova__hair?stkn=MWE0cDZyNHp5amFj&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full border border-charcoal/20 px-6 py-3 text-sm text-charcoal transition-colors hover:border-gold hover:text-gold"
+                className="inline-block rounded-full border border-charcoal/20 px-6 py-3 text-sm text-charcoal transition-colors hover:border-gold hover:text-black"
               >
                 Instagram
               </a>

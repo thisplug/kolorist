@@ -37,7 +37,7 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeContent blur duration={1200}>
           <div className="mb-16 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Обо мне</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-black">Обо мне</p>
             <BlurText
               text="Меня зовут Алёна, и я 20 лет преподаю и практикую колористику"
               delay={60}
@@ -54,7 +54,7 @@ export default function About() {
                 key={stat.label}
                 className="rounded-2xl border border-rose-light/30 bg-white/50 p-6 text-center"
               >
-                <span className="font-display text-4xl text-gold">{stat.value}</span>
+                <span className="font-display text-4xl text-black">{stat.value}</span>
                 <p className="mt-2 text-sm text-warm-gray">{stat.label}</p>
               </div>
             ))}
@@ -117,7 +117,7 @@ export default function About() {
                 <ul className="mt-4 space-y-3">
                   {expertise.map((item) => (
                     <li key={item} className="flex gap-3 text-sm text-warm-gray">
-                      <span className="text-gold">✦</span>
+                      <span className="text-black">✦</span>
                       {item}
                     </li>
                   ))}
@@ -140,7 +140,7 @@ export default function About() {
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {courseGoals.map((goal) => (
                 <li key={goal} className="flex items-start gap-2 text-sm text-charcoal/90">
-                  <span className="text-gold">✔</span>
+                  <span className="text-black">✔</span>
                   {goal}
                 </li>
               ))}

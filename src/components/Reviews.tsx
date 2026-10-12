@@ -33,7 +33,7 @@ export default function Reviews() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeContent>
           <div className="mb-16 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Отзывы</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-black">Отзывы</p>
             <h2 className="font-display text-4xl text-charcoal md:text-5xl">
               Результаты, которыми хочется делиться
             </h2>
@@ -47,7 +47,7 @@ export default function Reviews() {
           {reviews.map((review, index) => (
             <FadeContent key={review.text} delay={index * 100}>
               <article className="flex h-full flex-col rounded-2xl border border-rose-light/40 bg-cream/70 p-7">
-                <div className="mb-5 flex gap-1 text-gold" aria-label="5 из 5">
+                <div className="mb-5 flex gap-1 text-black" aria-label="5 из 5">
                   {[0, 1, 2, 3, 4].map((star) => (
                     <span key={star} aria-hidden="true">★</span>
                   ))}
@@ -55,7 +55,7 @@ export default function Reviews() {
                 <blockquote className="flex-1 text-sm leading-relaxed text-charcoal/80">
                   «{review.text}»
                 </blockquote>
-                <p className="mt-6 text-xs uppercase tracking-[0.18em] text-gold">{review.label}</p>
+                <p className="mt-6 text-xs uppercase tracking-[0.18em] text-black">{review.label}</p>
               </article>
             </FadeContent>
           ))}

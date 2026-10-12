@@ -13,7 +13,7 @@ export default function Pricing() {
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <FadeContent blur>
           <div className="mb-16 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Тарифы</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-black">Тарифы</p>
             <BlurText
               text="Курс «Колористика с нуля»"
               delay={60}
@@ -29,7 +29,7 @@ export default function Pricing() {
             </p>
             <a
               href="#contact"
-              className="mt-2 inline-block text-sm text-charcoal underline underline-offset-4 hover:text-gold"
+              className="mt-2 inline-block text-sm text-charcoal underline underline-offset-4 hover:text-black"
             >
               Напишите мне, чтобы узнать условия рассрочки
             </a>
@@ -54,12 +54,12 @@ export default function Pricing() {
                   />
                 )}
                 {tariff.highlight && (
-                  <span className="mb-3 inline-block w-fit rounded-full bg-gold/15 px-3 py-1 text-xs uppercase tracking-wider text-gold">
+                  <span className="mb-3 inline-block w-fit rounded-full bg-gold/15 px-3 py-1 text-xs uppercase tracking-wider text-black">
                     Популярный
                   </span>
                 )}
                 <h3 className="font-display text-xl text-charcoal">{tariff.name}</h3>
-                <p className="mt-2 font-display text-3xl text-gold">
+                <p className="mt-2 font-display text-3xl text-black">
                   {formatPrice(tariff.price)} ₽
                 </p>
                 <p className="mt-2 text-sm font-medium text-charcoal">Доступна рассрочка</p>
@@ -68,7 +68,7 @@ export default function Pricing() {
                 <ul className="mt-6 flex-1 space-y-2">
                   {tariff.features.map((feature) => (
                     <li key={feature} className="flex gap-2 text-sm text-charcoal/85">
-                      <span className="text-gold">✓</span>
+                      <span className="text-black">✓</span>
                       {feature}
                     </li>
                   ))}
@@ -87,7 +87,7 @@ export default function Pricing() {
                   className={`mt-6 block rounded-full py-3 text-center text-sm uppercase tracking-widest transition-all ${
                     tariff.highlight
                       ? 'bg-charcoal text-cream hover:bg-gold'
-                      : 'border border-charcoal/20 text-charcoal hover:border-gold hover:text-gold'
+                      : 'border border-charcoal/20 text-charcoal hover:border-gold hover:text-black'
                   }`}
                 >
                   Выбрать тариф
@@ -103,7 +103,7 @@ export default function Pricing() {
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {courseTopics.map((topic) => (
                 <li key={topic} className="flex gap-2 text-sm text-warm-gray">
-                  <span className="text-gold">•</span>
+                  <span className="text-black">•</span>
                   {topic}
                 </li>
               ))}
@@ -112,7 +112,7 @@ export default function Pricing() {
               href="https://vk.com/uslugi-181330205?screen=group"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-block text-sm text-gold underline-offset-4 hover:underline"
+              className="mt-6 inline-block text-sm text-black underline-offset-4 hover:underline"
             >
               Все тарифы на VK →
             </a>

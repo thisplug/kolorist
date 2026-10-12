@@ -29,7 +29,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#" className="font-display text-2xl tracking-wide text-charcoal">
-          Алёна <span className="text-gold">Михайлова</span>
+          Алёна <span className="text-black">Михайлова</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -37,7 +37,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm uppercase tracking-widest text-warm-gray transition-colors hover:text-gold"
+              className="text-sm uppercase tracking-widest text-warm-gray transition-colors hover:text-black"
             >
               {link.label}
             </a>

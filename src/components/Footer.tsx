@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="border-t border-rose-light/30 py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 md:flex-row">
         <p className="font-display text-lg text-charcoal">
-          Алёна <span className="text-gold">Михайлова</span>
+          Алёна <span className="text-black">Михайлова</span>
         </p>
         <p className="text-sm text-warm-gray">
           Колорист · Обучение колористике · Челябинск
@@ -12,7 +12,7 @@ export default function Footer() {
           href="https://vk.com/mikhailova__hair"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-gold hover:underline"
+          className="text-sm text-black hover:underline"
         >
           ВКонтакте
         </a>

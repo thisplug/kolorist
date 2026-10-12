@@ -26,7 +26,7 @@ export default function Training() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeContent blur>
           <div className="mb-16 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gold">Обучение</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-black">Обучение</p>
             <BlurText
               text="Колористика с нуля — понятно и системно"
               delay={60}
@@ -44,7 +44,7 @@ export default function Training() {
           {benefits.map((item, i) => (
             <FadeContent key={item.title} delay={i * 100}>
               <div className="group rounded-2xl border border-rose-light/30 bg-cream/50 p-8 transition-colors hover:border-gold/40">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 font-display text-lg text-gold">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 font-display text-lg text-black">
                   {String(i + 1).padStart(2, '0')}
                 </div>
                 <h3 className="font-display text-xl text-charcoal">{item.title}</h3>
@@ -57,7 +57,7 @@ export default function Training() {
         <FadeContent delay={400}>
           <div className="mt-16 grid gap-6 md:grid-cols-2">
             <div className="rounded-2xl border border-gold/30 bg-gold/10 p-8">
-              <p className="text-sm uppercase tracking-[0.2em] text-gold">Поддержка</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-black">Поддержка</p>
               <h3 className="mt-3 font-display text-2xl text-charcoal">Я рядом на всём пути</h3>
               <p className="mt-3 text-sm leading-relaxed text-warm-gray">
                 Во время обучения я всегда на связи: отвечаю на вопросы, разбираю
@@ -78,7 +78,7 @@ export default function Training() {
                 alt="Алёна работает с палитрами оттенков волос"
                 className="mb-6 block h-64 w-full rounded-xl object-cover object-center"
               />
-              <p className="text-sm uppercase tracking-[0.2em] text-gold">Моя цель</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-black">Моя цель</p>
               <h3 className="mt-3 font-display text-2xl text-charcoal">Чтобы ваше имя было на слуху</h3>
               <p className="mt-3 text-sm leading-relaxed text-warm-gray">
                 Я хочу, чтобы имя каждой моей ученицы звучало в этой сфере, а её

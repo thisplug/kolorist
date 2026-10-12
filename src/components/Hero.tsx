@@ -7,7 +7,7 @@ export default function Hero() {
       <HeroVideo />
 
       <div className="relative z-10 mx-auto w-full max-w-4xl px-6 pb-28 pt-36 text-center md:py-36">
-        <p className="mb-4 text-sm uppercase tracking-[0.3em] text-gold-light">
+        <p className="mx-auto mb-4 w-fit rounded-full bg-cream/95 px-4 py-2 text-sm uppercase tracking-[0.3em] text-black">
           Колорист · Челябинск
         </p>
 
